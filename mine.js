@@ -17,7 +17,8 @@ function stopMining() {
 }
 function mine() {
     if (!mining) return;
-    const block = new Block();
+    console.log({lastblockhash: db.blockchain.lastBlockHash()})
+    const block = new Block(db.blockchain.lastBlockHash());
     //TODO take transactions from the mempool
     const coinbase_utxo = new UTXO(PUBLIC_KEY, BLOCK_REWARD)
     const coinbaseTX = new Transaction([], [coinbase_utxo])
