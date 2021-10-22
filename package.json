@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
+    "jayson": "^3.6.5",
+    "nodemon": "^2.0.13",
+    "yargs": "^17.2.1"
+  },
+  "name": "pow-chain-class",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
